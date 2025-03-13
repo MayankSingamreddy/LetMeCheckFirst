@@ -1,52 +1,57 @@
-# Keystroke Recorder and Query Formatter
+# LetMeCheckFirst
 
-This application captures keystrokes between Command+U key combinations and sends the recorded text to Ollama for processing. The formatted response is then automatically typed out.
+A lightweight prompt formatting tool that improves the accuracy of your AI coding queries. LetMeCheckFirst intercepts your prompts, refines them for clarity and precision, and then pastes the improved version right where you need it - perfect for developers who want to maximize the value of their AI coding assistants.
 
 ## Features
 
-- Start/stop recording with Command+U
-- Automatically sends captured text to Ollama for processing
-- Types out the formatted response automatically
-- Configurable system prompt and model
+✨ **Start/stop recording** with Command+U  
+🔄 **Process text** through local Ollama models  
+⚡ **Instant pasting** of improved prompts  
+🛠️ **Fully configurable** system prompt and model
 
 ## Requirements
 
 - Python 3.6+
-- pynput
-- requests
 - Ollama running locally
+- macOS with accessibility permissions
 
 ## Installation
 
 1. Ensure Ollama is installed and running on your machine
 2. Install the required Python packages:
+   ```bash
+   pip3 install pynput requests pyperclip
    ```
-   pip3 install pynput requests
-   ```
+3. Grant accessibility permissions to Terminal.app or your Python IDE:
+   - Go to **System Preferences** > **Security & Privacy** > **Privacy** > **Accessibility**
+   - Add and enable your terminal application
 
 ## Usage
 
 1. Run the script:
-   ```
+   ```bash
    python3 key_recorder.py
    ```
-2. Press Command+U to start recording keystrokes
-3. Type your query
-4. Press Command+U again to stop recording
-5. The application will send your text to Ollama for processing
-6. Once processed, the formatted response will be automatically typed out
+2. Press **Command+U** to start recording your prompt
+3. Type your query or code question
+4. Press **Command+U** again to stop recording
+5. Place your cursor where you want the improved prompt
+6. The formatted response will be automatically pasted
 
 ## Configuration
 
-You can modify the following variables in the script:
-- `ollama_url`: The URL endpoint for Ollama (default: http://localhost:11434/api/generate)
-- `system_prompt`: The system prompt used for query formatting
-- `model`: The Ollama model to use (default: "llama3")
+The script uses these default settings which you can modify:
+
+- **Model**: Uses `phi4` by default (can be changed to any Ollama model)
+- **System Prompt**: Customizable instruction for how prompts should be formatted
+- **Ollama URL**: Default is `http://localhost:11434/api/generate`
 
 ## Troubleshooting
 
-If you encounter issues, check the `key_recorder.log` file for error messages.
+- If pasting doesn't work, ensure accessibility permissions are granted
+- Check the `key_recorder.log` file for detailed error messages
+- Make sure Ollama is running with your desired model available
 
 ## Exit
 
-Press Escape to exit the application.
+Press **Escape** to exit the application
