@@ -3,7 +3,6 @@
 # 🔍 LetMeCheckFirst
 
 [![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Ollama](https://img.shields.io/badge/Powered%20by-Ollama-green)](https://github.com/ollama/ollama)
 
 A lightweight prompt formatting tool that improves the accuracy of your AI coding queries.
