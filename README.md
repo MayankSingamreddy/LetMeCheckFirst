@@ -9,8 +9,7 @@ A lightweight prompt formatting tool that improves the accuracy of your AI codin
 
 ## Note:
 
-I created this project back when prompt engineering was a thing, we're talking gpt3.5 days. I know this doesn't seem relevant anymore because GPT5 is fine tuned to not require prompt engineering anymore, this is the caveat to let you know I'm not an idiot lol. 
-
+I created this project back when prompt engineering was a thing, we're talking gpt3.5 days. This doesn't seem relevant anymore because GPT5 is fine tuned to not require prompt engineering anymore
 </div>
 
 ---
